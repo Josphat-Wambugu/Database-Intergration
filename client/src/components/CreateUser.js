@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { createUser } from "../controllers/userController";
+import { createUser } from "../../../server/controllers/userController";
 
 const [formData,setFormData] = useState({
   name: "",

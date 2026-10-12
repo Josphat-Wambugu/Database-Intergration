@@ -2,7 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import helmet from 'helmet';
 import cors from 'cors';
-import router from './routes/userRoutes';
+import router from './server/routes/userRoutes';
 
 
 
@@ -15,13 +15,6 @@ app.use(bodyParser.json());
 app.use(router)
 
 const port = process.env.PORT || 3000;
-
-
-
-
-
-
-
 
 
 app.listen(port, () => {

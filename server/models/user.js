@@ -1,7 +1,7 @@
 // Import the DataType object from Sequelize
 import { DataTypes } from 'sequelize';
 // Import the Sequelize instance (connection) from the configuration file
-import sequelize from '../config/connection.js';
+import sequelize from '../../config/connection.js';
  
 // Define the model for the "users" table using sequelize.define()
 const User = sequelize.define('User', {
