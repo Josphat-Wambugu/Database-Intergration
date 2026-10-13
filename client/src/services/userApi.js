@@ -2,7 +2,7 @@
 // Base URL is configurable via VITE_API_BASE_URL (see client/.env.example)
 // so it's easy to point at a different host/port without touching code.
 const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api/users';
+  import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:3001/api/users';
 
 async function handleResponse(response) {
   const data = await response.json().catch(() => ({}));
